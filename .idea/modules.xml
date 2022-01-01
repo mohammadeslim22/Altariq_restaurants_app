@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ALTARIQ_Restaurant.iml" filepath="$PROJECT_DIR$/ALTARIQ_Restaurant.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALTARIQ_Restaurant.iml" filepath="$PROJECT_DIR$/ALTARIQ_Restaurant.iml" group="ALTARIQ_Restaurant" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ALTARIQ_Restaurant/app" />
     </modules>
   </component>
 </project>
