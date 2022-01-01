@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/root_dl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="hardware">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg"/>
+
+        <Button
+                android:id="@+id/hidden_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/custom_spinner_background"
+                android:text="My Hidden Button"
+                android:textColor="@color/float_transparent"
+                android:visibility="visible"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".5">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layerType="hardware"
+                android:padding="20dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/logo"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sign_in_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PIN"
+                        android:inputType="numberPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+
+                    android:layout_marginTop="24dp"
+                    android:padding="12dp"
+
+                    android:text="تسجيل الدخول"
+                    app:pb_colorComplete="@color/green_complete"
+                    app:pb_colorNormal="@color/accent"
+                    app:pb_colorPressed="?android:attr/colorPressedHighlight"
+
+                    app:pb_textComplete="تم تسجيل الدخول"
+                    app:pb_textProgress="يتم التحقق..."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_sync"
+            app:showAsAction="never"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:title="تحديث البيانات"/>
+
+    <item
+            android:id="@+id/action_logout"
+            android:title="تسجيل الخروج"
+            app:showAsAction="never"
+            android:icon="@drawable/baseline_exit_to_app_24"/>
+
+
+    <item
+            android:id="@+id/action_delete"
+            android:icon="@drawable/baseline_delete_24"
+            android:visible="false"
+            android:title="حذف الطلب"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_note"
+            android:icon="@drawable/baseline_note_24"
+            android:visible="false"
+            android:title="ملاحظات الطلب"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_send"
+            android:icon="@drawable/baseline_send_24"
+            android:visible="false"
+            android:title="إرسال إلى المطبخ"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_view"
+            android:icon="@drawable/baseline_view_list_24"
+            android:visible="false"
+            android:title="عرض الطلبات"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_expand"
+            android:icon="@drawable/baseline_fullscreen_exit_24"
+            android:title="القائمة"
+            app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/action_search"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="بحث"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            style="@style/MaterialSearchViewStyle"
+            app:showAsAction="always"/>
+
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="150dp"
+                                   android:layout_height="250dp"
+                                   android:clickable="true"
+                                   android:focusable="true"
+                                   android:backgroundTint="@color/white"
+                                   android:foreground="?android:attr/selectableItemBackground"
+                                   android:orientation="horizontal"
+                                   app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="top">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/imageContainer"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:backgroundTint="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                app:cardCornerRadius="10dp">
+
+            <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_meal"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageContainer"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:justificationMode="inter_word"
+                android:gravity="center_horizontal"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Sample title"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:maxLines="2"/>
+
+        <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="150dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal|bottom"
+                android:textColor="@color/green_normal"
+                android:layout_centerHorizontal="true"
+                android:scrollHorizontally="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="5.5"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+

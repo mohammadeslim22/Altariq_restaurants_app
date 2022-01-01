@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="screen_padding" tools:ignore="MissingDefaultResource">20dp</dimen>
+    <dimen name="spacing_normal">10dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+
+</resources>

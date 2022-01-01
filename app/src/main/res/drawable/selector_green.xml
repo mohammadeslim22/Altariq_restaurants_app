@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"  android:color="@color/gray">
+    <!-- Apply the margin value on the "item" element -->
+    <!-- This example creates a 15dp visible margin around the dialog -->
+    <item android:top="5dp" android:bottom="2dp" android:left="0dp" android:right="0dp">
+        <shape android:background="?actionBarItemBackground">
+            <solid android:color="@color/material_green_A700"/>
+
+            <!-- Add attributes specific to your background (e.g. corner radius, colors, etc.) -->
+
+            <!-- Set "padding" at minimum to match margin and add additional content padding as well, if desired -->
+            <!-- This example creates 10dp of internal padding for content -->
+            <corners android:radius="5dip"/>
+
+        </shape>
+    </item>
+</ripple>

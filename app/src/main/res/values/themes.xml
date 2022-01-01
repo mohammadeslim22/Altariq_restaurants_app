@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/material_blue_200</item>
+        <item name="colorError">@color/error</item>
+
+
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme" >
+        <item name="android:colorBackground">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

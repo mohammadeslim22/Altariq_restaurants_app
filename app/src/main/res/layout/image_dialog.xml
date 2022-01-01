@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="16dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:backgroundTint="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dialog_background"
+                    android:id="@+id/image_view"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageContainer"
+                android:background="@color/transparent">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@color/transparent">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_name"
+                        android:textAlignment="center"
+                        android:text="dialog box"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:id="@+id/tv_desc"
+                        android:text="dialog"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/tv_name"/>
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_close"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:weightSum="100"
+                        android:layout_below="@id/tv_desc"
+                        android:layout_marginBottom="1dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="إغلاق"
+                        android:textSize="12sp"
+                        app:fb_borderWidth="0dp"
+                        app:fb_defaultColor="@color/red_normal"
+                        app:fb_disabledColor="#e4e4e4"
+                        app:fb_focusColor="#FFFFFF"
+                        app:fb_radius="10dp"
+                        app:fb_iconPosition="right"
+                        app:fb_textColor="#FFFFFF"/>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,201 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/root_dl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layerType="hardware">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal|center_vertical">
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:el_duration="500"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                app:el_expanded="false"
+                app:el_parallax="0">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                <LinearLayout
+                        android:id="@+id/top_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <pl.utkala.searchablespinner.SearchableSpinner
+                            android:id="@+id/customersSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:visibility="visible"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            app:dialogTitle="إختر زبون"
+                            app:closeText="إغلاق"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/spinner_border"/>
+
+                    <pl.utkala.searchablespinner.SearchableSpinner
+                            android:id="@+id/tablesSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            app:dialogTitle="إختر طاولة"
+                            app:closeText="إغلاق"
+                            android:visibility="visible"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@android:color/white"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/spinner_border"/>
+
+                </LinearLayout>
+
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView
+                        android:id="@+id/order_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="left"
+                        android:gravity="center"
+                        android:layout_above="@+id/footer"
+                        android:layout_below="@id/top_layout"
+                        android:verticalScrollbarPosition="left"
+                        android:layout_gravity="center_vertical"
+                        android:elevation="5dp"
+                        app:reverseLayout="true"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:layout_alignParentBottom="true"
+                        app:cardBackgroundColor="@color/cardview_light_background"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:contentPadding="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+                            android:paddingRight="5dp">
+
+                        <LinearLayout
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:id="@+id/order_total_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="0"
+                                    android:textColor="@color/green_complete"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#888"
+                                    android:text="الإجمالي:"
+                                    android:layout_gravity="center_vertical"
+
+                                    android:gravity="right"
+                                    android:textSize="24sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/order_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#888"
+                                android:text=""
+                                android:gravity="right"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:textSize="20sp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swipe_refresh"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/menu_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="right"
+                    android:verticalScrollbarPosition="right"
+                    android:elevation="10dp"
+                    style="@style/myRecyclerViewStyle"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/baseline_add_24"
+            app:rippleColor="@color/material_blue_900"
+            android:id="@+id/btn_new"
+            android:layout_weight="100"
+            android:elevation="15dp"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:translationZ="15dp"
+            app:fabCustomSize="60dp"
+            android:layout_margin="24dp"
+            app:layout_anchor="@id/root_dl"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

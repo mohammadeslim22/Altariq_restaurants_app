@@ -1,0 +1,18 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 130 ciObject found
+ciMethod org/objectweb/asm/ClassWriter newUTF8 (Ljava/lang/String;)I 2049 1 6222 0 -1
+ciMethod org/objectweb/asm/Attribute a ()I 0 0 1 0 -1
+ciMethod org/objectweb/asm/Attribute a (Lorg/objectweb/asm/ClassWriter;[BIII)I 0 0 1 0 -1
+ciMethod org/objectweb/asm/Attribute a (Lorg/objectweb/asm/ClassWriter;[BIIILorg/objectweb/asm/ByteVector;)V 0 0 1 0 -1
+ciMethod org/objectweb/asm/MethodWriter a (Lorg/objectweb/asm/ByteVector;)V 3097 297 387 0 -1
+ciMethod org/objectweb/asm/AnnotationWriter a ()I 25 25 3 0 -1
+ciMethod org/objectweb/asm/AnnotationWriter a (Lorg/objectweb/asm/ByteVector;)V 25 49 3 0 -1
+ciMethod org/objectweb/asm/AnnotationWriter a ([Lorg/objectweb/asm/AnnotationWriter;ILorg/objectweb/asm/ByteVector;)V 0 0 1 0 -1
+ciMethod org/objectweb/asm/ByteVector putByte (I)Lorg/objectweb/asm/ByteVector; 1977 1 5517 0 -1
+ciMethod org/objectweb/asm/ByteVector putShort (I)Lorg/objectweb/asm/ByteVector; 2049 1 5933 0 -1
+ciMethod org/objectweb/asm/ByteVector putInt (I)Lorg/objectweb/asm/ByteVector; 3769 1 2109 0 -1
+ciMethod org/objectweb/asm/ByteVector putByteArray ([BII)Lorg/objectweb/asm/ByteVector; 3073 1 1343 0 -1
+ciMethodData org/objectweb/asm/ByteVector putShort (I)Lorg/objectweb/asm/ByteVector; 2 5933 orig 264 56 157 187 91 0 0 0 0 128 146 240 18 0 0 0 0 88 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 105 177 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 48 0 0 0 255 255 255 255 7 0 13 0 0 0 0 0 data 6 0xd0007 0x161f 0x30 0xe 0x120002 0xe oops 0
+ciMethodData org/objectweb/asm/ClassWriter newUTF8 (Ljava/lang/String;)I 2 6222 orig 264 56 157 187 91 0 0 0 0 48 208 233 18 0 0 0 0 48 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 113 186 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 224 0 0 0 255 255 255 255 5 0 8 0 0 0 0 0 data 28 0x80005 0x0 0x14c440c0 0x174e 0x0 0x0 0x100002 0x174e 0x150007 0xe06 0xa0 0x948 0x1d0005 0x0 0x1575bbe0 0x948 0x0 0x0 0x210005 0x0 0x1575bbe0 0x948 0x0 0x0 0x380002 0x948 0x3e0002 0x948 oops 3

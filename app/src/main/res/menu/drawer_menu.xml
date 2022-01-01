@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 1" />
+
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 2" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 3" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 4" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 5" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 6" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 7" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 8" />
+
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 9" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 01" />
+        <item
+            android:icon="@drawable/ic_item_swipe_pinned"
+            android:title="طلب رقم 11" />
+    </group>
+
+</menu>
